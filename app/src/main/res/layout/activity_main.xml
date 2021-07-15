@@ -6,15 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0d1117"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:textAlignment="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tituloIMC"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="60dp"
         android:text="Índice De Massa Corporal"
         android:textAlignment="center"
         android:textColor="#00FFFF
@@ -34,6 +35,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="#FFFFFF"
         android:hint="Insira seu peso em KG"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
@@ -45,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="64dp"
         android:layout_marginTop="24dp"
+        android:inputType="numberDecimal"
         android:backgroundTint="#FFFFFF"
         android:hint="Insira sua altura"
         android:textAlignment="center"
