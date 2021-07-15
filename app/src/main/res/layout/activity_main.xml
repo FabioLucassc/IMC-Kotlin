@@ -1,45 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0d1117"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tituloIMC"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textColor="@color/purple_500"
-        android:textSize="48sp"
+        android:text="Índice De Massa Corporal"
+        android:textAlignment="center"
+        android:textColor="#00FFFF
+"
+        android:textSize="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.361" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/pesoInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <RadioButton
-        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Insira seu peso em KG"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+    <EditText
+        android:id="@+id/alturaInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="283dp"
-        android:text="Radio Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Insira sua altura"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFF"
+        android:textColor="@color/black"
+        android:shadowColor="@color/white"
+        android:text="CALCULAR" />
+
+</LinearLayout>
