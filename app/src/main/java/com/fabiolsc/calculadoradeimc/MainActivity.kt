@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Retirar barra de menu e deixar em tela cheia ---------------------------------------------
@@ -40,9 +41,7 @@ class MainActivity : AppCompatActivity() {
         cacularButton.setOnClickListener{
             calculaIMC(pesoInput.text.toString(), alturaInput.text.toString())
         }
-
     }
-
 
     fun calculaIMC(peso: String, altura: String){
 
@@ -79,8 +78,6 @@ class MainActivity : AppCompatActivity() {
                 valorIMCTextView.setTextColor(Color.MAGENTA)
                 statusIMCTextView.setTextColor(Color.MAGENTA)
 
-
-
             }else if (imc >= 30 && imc<= 35){
                 resumoTextView.setText("Seu IMC é:")
                 valorIMCTextView.setText("%.2f".format(imc))
@@ -88,8 +85,6 @@ class MainActivity : AppCompatActivity() {
 
                 valorIMCTextView.setTextColor(Color.YELLOW)
                 statusIMCTextView.setTextColor(Color.YELLOW)
-
-
 
             }else if (imc > 35){
                 resumoTextView.setText("Seu IMC é:")
@@ -99,11 +94,7 @@ class MainActivity : AppCompatActivity() {
                 valorIMCTextView.setTextColor(Color.RED)
                 statusIMCTextView.setTextColor(Color.RED)
 
-
-
             }
         }
-
-
     }
 }
